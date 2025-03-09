@@ -1,10 +1,10 @@
 const readlineSync = require("readline-sync");
 
 function doThing(userInput){
-    console.log(userInput)
+    return userInput;
 }
 
 while (true){
     let input = readlineSync.question("Enter: ");
-    doThing(input);
+    console.log(doThing(input));
 }
