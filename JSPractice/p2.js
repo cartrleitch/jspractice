@@ -1,10 +1,15 @@
-const readlineSync = require("readline-sync");
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
 
-function doThing(userInput){
-    console.log(userInput)
+function doThing(list1, list2){
+    let newList = [];
+    
+    for (let i = 0; i < list1.length; i++){
+        newList.push(list1[i])
+        newList.push(list2[i])
+    }
+
+    return newList;
 }
 
-while (true){
-    let input = readlineSync.question("Enter: ");
-    doThing(input);
-}
+console.log(doThing(l1, l2));
