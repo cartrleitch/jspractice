@@ -1,5 +1,7 @@
 function doThing(userInput){
-    return `${Math.max(...userInput)} - ${Math.min(...userInput)} = ${(Math.max(...userInput) - Math.min(...userInput))}`;
+    let max = Math.max(...userInput);
+    let min = Math.min(...userInput);
+    return `${max} - ${min} = ${max - min}`;
 }
 
 const input = [10, 3, 5, 20, 50, 2, 4, 9];
